@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgeter</title>
+    <link rel = "stylesheet" href = "styles.css">
 </head>
 <body>
+    <div class = "wrapper">
+        <div class = "container">
+            <div class = "mini-container">
+                <div class = "total-amt-container">
+                    <h3>Budget Setting</h3>
+                    <p class = "hide-err" id = "budget-err">
+                        Value must be greater than 0.
+                    </p>
+                    <input
+                        type = "number"
+                        id = "total-amt"
+                        placeholder = "Enter total amount."
+                    />
+                    <button class = "Submit" id = "total-submit-btn">Set Budget</button>
+                </div>
+
+                <div class = "user-expense-container">
+                    <h3>Expense Entering</h3>
+                    <p class = "hide-err" id = "prod-title-err">
+                        Field cannot be empty.
+                    </p>
+                    <input
+                        type = "text"
+                        class = "prod-title"
+                        id = "prod-title"
+                        placeholder = "Enter product name."
+                    />
+                    <input
+                        type = "number"
+                        id = "user-cost"
+                        placeholder = "Enter product cost."
+                    />
+                    <button class = "Submit" id = "check-amt">Check Amount</button>
+                </div>
+            </div>
+            <div class = "output-container">
+                <div>
+                    <p>Total Budget</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
